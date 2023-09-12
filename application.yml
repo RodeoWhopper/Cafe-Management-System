@@ -1,0 +1,21 @@
+server:
+
+# DB Config
+  database:
+    username: root
+    password: 123456
+    dbname: nodedb
+    port: 3306
+    host: localhost
+
+# Listener Port
+  port: 8080
+
+# JWT Generator Secret Key
+  authentication:
+    secret_key: bab0403d43b9e8eac6e2db920fee7719077c071263ceedff08eccdb3f185c3b07bf37f5c5d57869a5626fa745e0c77a09a8d33659b9622a02c7e9066f1880fea
+
+# Mail Service Config
+  nodemailer:
+    email: emirhanblt9@outlook.com
+    password: anan31sj
