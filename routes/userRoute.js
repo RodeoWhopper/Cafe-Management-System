@@ -12,8 +12,7 @@ const router = express.Router();
 
 const configObject = connectionUtil.getYaml();
 
-
-//user must be signed in to use auth APIs
+//user must be signed in to use authenticateToken APIs
 //user role must be admin to use isAdmin APIs
 
 //signup api
