@@ -34,9 +34,9 @@ router.get('/get',authenticateToken,(req, res, next) => {
 
 
 router.patch('/update',authenticateToken,isAdmin,(req, res, next) => {
-    let product = req.body;
+    let category = req.body;
     let query = "update categories set category_name=? where category_id=?";
-    connection.query(query,[product.category_name,product.category_id],(err,results) => {
+    connection.query(query,[category.category_name,category.category_id],(err,results) => {
         if(!err){
             if(results.affectedRows === 0){
                 return res.status(404).json({message:"Category id does not exist..."});
