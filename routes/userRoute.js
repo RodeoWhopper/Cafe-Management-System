@@ -37,6 +37,7 @@ router.post('/signup',(req, res) => {
             return res.status(500).json(err);
         }
     })
+
 })
 
 
@@ -65,7 +66,7 @@ router.post('/login',(req, res) => {
 })
 
 
-//change password api
+//change password api ---- authentication
 router.post('/changePassword',authenticateToken ,(req, res) => {
     let user = req.body;
     const email = res.locals.email;
@@ -140,7 +141,7 @@ router.post('/forgotPassword',(req, res) => {
 
 
 
-//get all api ---- admin api ---- authentication api
+//get all api ---- authentication ----  admin
 router.get('/get',authenticateToken ,isAdmin ,(req,res) => {
    let query = "select id,name,contact_number,email,status from users where role='user'";
    connection.query(query,(err,results) =>{
@@ -152,13 +153,13 @@ router.get('/get',authenticateToken ,isAdmin ,(req,res) => {
    });
 });
 
-//authentication api
+//authentication
 router.get('/checkToken',authenticateToken  , (req, res) => {
     return res.status(200).json({message:'true'});
 });
 
 
-//update user api ---- admin api ---- authentication api
+//update user api ---- authentication ---- admin
 router.patch('/update',authenticateToken ,isAdmin ,(req, res) => {
     let user = req.body;
     let query = "update users set status=? where id=?";
