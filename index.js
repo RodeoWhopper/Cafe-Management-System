@@ -5,6 +5,7 @@ const userRoute = require('./routes/userRoute');
 const categoryRoute = require('./routes/categoryRoute');
 const productRoute = require('./routes/productRoute');
 const billRoute = require('./routes/billRoute');
+const dashboardRoute = require('./routes/dashboardRoute');
 
 const app = express();
 
@@ -15,5 +16,6 @@ app.use('/user',userRoute);
 app.use('/category',categoryRoute);
 app.use('/product',productRoute);
 app.use('/bill',billRoute);
+app.use('/dashboard',dashboardRoute);
 
 module.exports = app;
