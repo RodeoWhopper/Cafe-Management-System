@@ -1,3 +1,5 @@
 node_modules/
 sql/
 *.sql
+generated_pdf/
+*.pdf
