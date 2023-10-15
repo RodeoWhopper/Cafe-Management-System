@@ -1,0 +1,48 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+h1{
+  font-family: 'Inclusive Sans',sans-serif;
+}
+
+.text{
+  display: flex;
+  justify-content: left;
+  width: 65%;
+}
+
+header{
+  margin-bottom: 45px;
+  font-family: 'Inclusive Sans', sans-serif;
+  font-size: 30px;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.24);
+}
+
+.container{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Inclusive Sans',sans-serif;
+  background: #fffdef;
+}
+
+.input-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  aspect-ratio: 4/3;
+  width: 450px;
+  border-radius: 10px;
+  background: #e70000;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.custom-mat-input{
+  width: 300px;
+}

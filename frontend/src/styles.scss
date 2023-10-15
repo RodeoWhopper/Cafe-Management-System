@@ -1,0 +1,86 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+
+//these are for my color palette
+html {
+  .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    color: black;
+    background-color: beige;
+    //input field background color
+  }
+  .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-floating-label, .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-floating-label--float-above {
+    color: black;
+    //unfocused label color
+  }
+  .mdc-text-field--filled:not(.mdc-text-field--disabled).mdc-text-field--focused .mdc-floating-label, .mdc-text- field--filled:not(.mdc-text-field--disabled).mdc-text-field-- focused .mdc-floating-label--float-above {
+    color: green;
+    //focused label color
+  }
+  .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::after {
+    border-bottom-color: green;
+    //underline color
+  }
+  .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
+    color: blue;
+    //text input color
+  }
+  .mdc-text-field--filled {
+    --mdc-filled-text-field-active-indicator-height: 1px;
+    --mdc-filled-text-field-focus-active-indicator-height: 2px;
+    --mdc-filled-text-field-container-shape: 20px;
+    border-top-left-radius: var(--mdc-filled-text-field-container-shape);
+    border-top-right-radius: var(--mdc-filled-text-field-container-shape);
+    border-bottom-right-radius: var(--mdc-filled-text-field-container-shape);
+    border-bottom-left-radius: var(--mdc-filled-text-field-container-shape);
+  }
+}
+
+
+
+
+//snackbar css
+
+.black-snackbar{
+  background-color: black !important;
+  color:white !important;
+}
+
+.green-snackbar{
+  background-color: #32CD32 !important;
+  color: white !important;
+}
+
+
+
+//common fxLayouts
+
+.flex-layout-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-layout{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-layout-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-layout-row-reverse{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-layout-column-reverse{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
